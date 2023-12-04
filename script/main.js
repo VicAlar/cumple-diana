@@ -24,6 +24,14 @@ const fetchData = () => {
     });
 };
 
+const video = document.getElementById("video");
+video.addEventListener("canplay", function() {
+    setTimeout(function() {
+        video.play();
+    }, 5000);
+});
+
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
@@ -305,9 +313,3 @@ const animationTimeline = () => {
 // Run fetch and animation in sequence
 fetchData();
 
-const video = document.getElementById("video");
-video.addEventListener("canplay", function() {
-    setTimeout(function() {
-        video.play();
-    }, 5000);
-});
