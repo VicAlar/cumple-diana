@@ -24,11 +24,11 @@ const fetchData = () => {
     });
 };
 
-var video = document.getElementById("video");
+const video = document.getElementById("video");
 video.addEventListener("canplay", function() {
     setTimeout(function() {
         video.play();
-    }, 600);
+    }, 360);
 });
 
 // Animation Timeline
