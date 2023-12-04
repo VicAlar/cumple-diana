@@ -28,7 +28,7 @@ const video = document.getElementById("video");
 video.addEventListener("canplay", function() {
     setTimeout(function() {
         video.play();
-    }, 360);
+    }, 5000);
 });
 
 // Animation Timeline
