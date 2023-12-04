@@ -19,10 +19,17 @@ const fetchData = () => {
         // Run amimation if so
         if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
           animationTimeline();
-        } 
+        }
       });
     });
 };
+
+const video = document.getElementById("video");
+video.addEventListener("canplay", function() {
+    setTimeout(function() {
+        video.play();
+    }, 5000);
+});
 
 // Animation Timeline
 const animationTimeline = () => {
